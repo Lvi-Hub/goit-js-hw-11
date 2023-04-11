@@ -37,7 +37,7 @@ async function inputSearch(e) {
 
   try {
     const { data } = await jsonPlaceholderApi.fetchPictures();
-
+    console.log({data});
     if (data.total === 0) {
       refs.btnLoadMore.classList.add('is-hidden');
       refs.picturesGallery.innerHTML = '';
